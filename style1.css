@@ -1,0 +1,246 @@
+*{box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+
+    body{
+        margin: 0;
+        background-color: hsl(184, 33%, 92%);
+        color: hsl(0, 0%, 10%);
+        line-height: 1.5;
+        font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+        }
+    
+        .wrapper{
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1200px;
+        }
+    
+        .hero-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #0099ff;
+            background-image: url("shibuya.jpg");
+        }
+
+        .hero-bg-1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #0099ff;
+        }
+    
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        }
+    
+    
+        .hero-text h1 {
+            margin-bottom: 5px;
+            text-shadow: 3px 3px 5px #000;
+            color: #ddd;
+            text-align: center;
+        }
+    
+        .hero-text span {
+            margin: 0 auto;
+            text-transform: uppercase;
+            color: #0099ff;
+            text-align: center;
+        }
+
+        .hero-text p {
+            text-shadow: 3px 3px 5px #000;
+            margin: 0 auto;
+            font-size: 30px;
+            text-align: center;
+        }
+    
+        .section-title {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    
+        section {
+            scroll-margin-top: 80px;
+        }
+    
+        /*nawigacja*/
+    
+        nav {
+            position: sticky;
+            top: 0;
+            height: 60px;
+            line-height: 60px;
+            background-color: white;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .burger-icon {
+            display: block;
+            margin-left: auto;
+            padding: 0 30px;
+            background: none;
+            border: none;
+            font-size: 30px;
+            line-height: 60px;
+            cursor: pointer;
+        }
+
+        .nav-items {
+            display: none;
+        }
+    
+    /*header*/
+    .header {
+        position: relative;
+        height: 330px;
+        background-image: url("shibuya.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /*main*/
+    
+    main {
+        margin: 60px 0; 
+    }
+    
+    /*o nas*/
+    .about-us-info {
+        margin-bottom: 10px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    /*produkty */
+    .products {
+        margin: 60px auto;
+        text-align: center;
+    }
+    
+    .product {
+        position: relative;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .product:hover h3 {
+        transform: scale(1.6);
+    }
+    
+    .product h3 {
+        text-transform: uppercase;
+        transition: transform .3s;
+    }
+    
+    
+    
+    .first-product {
+        background-image: url('../img/children-593313_640.jpg');
+    }
+    
+    .second-product {
+        background-image: url('../img/keyboard-70506_640.jpg');
+    }
+    
+    .third-product {
+        background-image: url('../img/woman-1851464_640.jpg');
+    }
+    
+    .fourth-product {
+        background-image: url('../img/laptop-1483974_640.jpg');
+    }
+    
+    /*kontakt*/
+    
+    .contact {
+        text-align: center;
+    }
+    
+    .contact h3 {
+        margin: 20px 0 5px;
+        text-transform: uppercase;
+    }
+    
+    /*footer */
+    
+    footer {
+        padding: 30px 10px;
+        text-align: center;
+        background-color: #ddd; 
+    }
+    
+        @media (min-width: 768px) {
+            .burger-icon {
+                display: none;
+            }
+    
+            .nav-items {
+                display: block;
+            }
+    
+
+    
+    
+    
+    
+     .nav-items a {
+            padding: 0 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .nav-items a:hover {
+            color: #09f;
+        }
+
+        .header {
+            height: 400px;
+            background-image: url('../img/hero-big.jpg');
+        }
+    
+        .hero-text h1 {
+            font-size: 36px;
+        }
+    
+        .hero-text p {
+            font-size: 18px;
+        }
+    
+        .products h3 {
+            font-size: 24px;
+        }
+    
+        }
+
+        @media all and (max-width: 499px) {
+            .hero-text h1 {
+                font-size: 42px;
+            }
+
+            .hero-text p {
+                font-size: 20px;
+            }
+
+            .hero-bg {
+                background-image: url("shibuya1.jpg");
+                background-size: cover;
+            }
+        }
